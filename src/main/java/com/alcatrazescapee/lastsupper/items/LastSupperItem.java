@@ -1,3 +1,9 @@
+/*
+ * Part of the Ore Veins Mod by alcatrazEscapee
+ * Work under Copyright. Licensed under the GPL-3.0.
+ * See the project LICENSE.md for more information.
+ */
+
 package com.alcatrazescapee.lastsupper.items;
 
 import javax.annotation.Nonnull;
@@ -12,7 +18,7 @@ import com.alcatrazescapee.lastsupper.capability.PlayerData;
 @ParametersAreNonnullByDefault
 public class LastSupperItem extends Item
 {
-    public LastSupperItem()
+    LastSupperItem()
     {
         super(new Properties().maxStackSize(1).group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new Food.Builder().setAlwaysEdible().hunger(0).saturation(0).build()));
     }
