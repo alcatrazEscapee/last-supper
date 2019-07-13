@@ -1,5 +1,5 @@
 /*
- * Part of the Ore Veins Mod by alcatrazEscapee
+ * Part of the Last Supper Mod by alcatrazEscapee
  * Work under Copyright. Licensed under the GPL-3.0.
  * See the project LICENSE.md for more information.
  */
@@ -40,8 +40,8 @@ public class LastSupper
 
         // Event subscribers
         FMLJavaModLoadingContext.get().getModEventBus().register(this);
-        FMLJavaModLoadingContext.get().getModEventBus().register(new ModItems());
-        MinecraftForge.EVENT_BUS.register(new ForgeEventHandler());
+        FMLJavaModLoadingContext.get().getModEventBus().register(ModItems.INSTANCE);
+        MinecraftForge.EVENT_BUS.register(ForgeEventHandler.INSTANCE);
     }
 
     @SubscribeEvent

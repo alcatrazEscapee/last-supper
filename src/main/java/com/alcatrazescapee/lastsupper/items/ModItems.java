@@ -1,5 +1,5 @@
 /*
- * Part of the Ore Veins Mod by alcatrazEscapee
+ * Part of the Last Supper Mod by alcatrazEscapee
  * Work under Copyright. Licensed under the GPL-3.0.
  * See the project LICENSE.md for more information.
  */
@@ -15,8 +15,10 @@ import com.alcatrazescapee.lastsupper.util.Helpers;
 
 import static com.alcatrazescapee.lastsupper.LastSupper.MOD_ID;
 
-public class ModItems
+public enum ModItems
 {
+    INSTANCE;
+
     @ObjectHolder(MOD_ID + ":last_supper")
     public static final LastSupperItem LAST_SUPPER = Helpers.notNull();
 
