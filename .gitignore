@@ -1,0 +1,11 @@
+# Intellij
+.idea/
+*.xml
+*.iml
+
+# Gradle / Build
+.gradle/
+build/
+out/
+run/
+
