@@ -2,7 +2,7 @@
 # Loader Metadata
 modLoader="javafml" # mandatory
 loaderVersion="[27,)" # mandatory
-issueTrackerURL="https://github.com/alcatrazEscapee/ore-veins/issues" # optional todo: add actual url
+issueTrackerURL="https://github.com/alcatrazEscapee/last-supper" # optional
 
 # Ore Veins
 [[mods]] # mandatory
@@ -10,7 +10,7 @@ issueTrackerURL="https://github.com/alcatrazEscapee/ore-veins/issues" # optional
     version="${file.jarVersion}" # mandatory
     displayName="Last Supper" # mandatory
     #updateJSONURL="http://myurl.me/" #optional
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/realistic-ore-veins" #optional todo: add actual url
+    displayURL="https://github.com/alcatrazEscapee/last-supper" #optiona
     #logoFile="examplemod.png" #optional
     #credits="" #optional
     authors="AlcatrazEscapee" #optional

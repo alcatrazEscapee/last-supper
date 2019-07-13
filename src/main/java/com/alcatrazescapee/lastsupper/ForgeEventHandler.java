@@ -3,8 +3,6 @@ package com.alcatrazescapee.lastsupper;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -80,7 +78,7 @@ public class ForgeEventHandler
                 }
 
                 // Create last supper item
-                ItemEntity lastSupperEntity = new ItemEntity(world, pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ()+ 0.5, new ItemStack(ModItems.LAST_SUPPER));
+                ItemEntity lastSupperEntity = new ItemEntity(world, pos.getX() + 0.5, pos.getY() + 1.5, pos.getZ() + 0.5, new ItemStack(ModItems.LAST_SUPPER));
                 lastSupperEntity.setMotion(0, 0, 0);
                 lastSupperEntity.setPickupDelay(60);
                 lastSupperEntity.setInvulnerable(true);

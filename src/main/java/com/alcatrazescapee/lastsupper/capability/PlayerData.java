@@ -28,7 +28,7 @@ public class PlayerData
         @Override
         public INBT writeNBT(Capability<IPlayerData> capability, IPlayerData instance, Direction side)
         {
-            return new ByteNBT((byte)(instance.hasEatenLastSupper() ? 1 : 0));
+            return new ByteNBT((byte) (instance.hasEatenLastSupper() ? 1 : 0));
         }
 
         @Override
@@ -52,15 +52,15 @@ public class PlayerData
         }
 
         @Override
-        public void setEatenLastSupper(boolean value)
-        {
-            this.eatenLastSupper = value;
-        }
-
-        @Override
         public boolean hasEatenLastSupper()
         {
             return eatenLastSupper;
+        }
+
+        @Override
+        public void setEatenLastSupper(boolean value)
+        {
+            this.eatenLastSupper = value;
         }
 
         @Nonnull
