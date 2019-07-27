@@ -107,6 +107,14 @@ public enum ForgeEventHandler
                 if (cap.hasEatenLastSupper())
                 {
                     event.player.getFoodStats().setFoodLevel(20);
+                    if (Config.COMMON.enableInfiniteSaturation.get())
+                    {
+                        event.player.getFoodStats().addStats(20, 1.0f);
+                    }
+                    else
+                    {
+                        event.player.getFoodStats().setFoodLevel(20);
+                    }
                 }
             });
         }
