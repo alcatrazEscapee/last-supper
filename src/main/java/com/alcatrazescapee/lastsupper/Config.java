@@ -30,6 +30,7 @@ public final class Config
     {
         public final ForgeConfigSpec.ConfigValue<String> catalystItem;
         public final ForgeConfigSpec.ConfigValue<List<? extends String>> ingredients;
+        public final ForgeConfigSpec.BooleanValue enableInfiniteSaturation;
 
         CommonConfig(ForgeConfigSpec.Builder builder)
         {
@@ -42,6 +43,10 @@ public final class Config
             ingredients = builder
                     .comment("The items used as ingredients for the last supper")
                     .defineList("ingredients", getDefaultIngredients(), obj -> obj instanceof String);
+
+            enableInfiniteSaturation = builder
+                    .comment("If true, the last supper will also provide infinite saturation as well as hunger")
+                    .define("enableInfiniteSaturation", false);
 
             builder.pop();
         }
