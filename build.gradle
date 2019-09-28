@@ -12,26 +12,24 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 
-version = '1.0.0'
+version = "${mod_version}"
 group = 'com.alcatrazescapee.lastsupper'
-archivesBaseName = 'lastsupper-forge-1.14'
+archivesBaseName = "lastsupper-forge-${mc_version}"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
-    mappings channel: 'snapshot', version: '20190712-1.14.3'
+    mappings channel: 'snapshot', version: '20190828-1.14.3'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
+    // Run configurations
     runs {
         client {
             workingDirectory project.file('run')
-
-            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
-
             mods {
-                lastsupper {
+                oreveins {
                     source sourceSets.main
                 }
             }
@@ -39,12 +37,9 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
-
-            //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
-
             mods {
-                lastsupper {
+                oreveins {
                     source sourceSets.main
                 }
             }
@@ -53,14 +48,12 @@ minecraft {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${MC_VERSION}-${FORGE_VERSION}"
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 }
 
-// Example for how to get properties into the manifest for reading by the runtime..
+// Puts the mod version into the jar for mods.toml to read from
 jar {
     manifest {
-        attributes([
-            "Implementation-Version": "${version}"
-        ])
+        attributes "Implementation-Version": "${mod_version}"
     }
 }

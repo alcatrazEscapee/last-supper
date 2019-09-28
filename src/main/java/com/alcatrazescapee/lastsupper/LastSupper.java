@@ -40,7 +40,7 @@ public class LastSupper
 
         // Event subscribers
         FMLJavaModLoadingContext.get().getModEventBus().register(this);
-        FMLJavaModLoadingContext.get().getModEventBus().register(ModItems.INSTANCE);
+        FMLJavaModLoadingContext.get().getModEventBus().register(ModItems.class);
         MinecraftForge.EVENT_BUS.register(ForgeEventHandler.INSTANCE);
     }
 

@@ -15,16 +15,16 @@ import com.alcatrazescapee.lastsupper.util.Helpers;
 
 import static com.alcatrazescapee.lastsupper.LastSupper.MOD_ID;
 
-public enum ModItems
+public class ModItems
 {
-    INSTANCE;
-
     @ObjectHolder(MOD_ID + ":last_supper")
     public static final LastSupperItem LAST_SUPPER = Helpers.notNull();
 
     @SubscribeEvent
-    public void registerItems(RegistryEvent.Register<Item> event)
+    public static void registerItems(RegistryEvent.Register<Item> event)
     {
         event.getRegistry().register(new LastSupperItem().setRegistryName("last_supper"));
     }
+
+    private ModItems() {}
 }

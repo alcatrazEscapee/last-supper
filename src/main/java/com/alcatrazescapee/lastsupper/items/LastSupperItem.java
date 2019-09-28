@@ -18,7 +18,7 @@ import com.alcatrazescapee.lastsupper.capability.PlayerData;
 @ParametersAreNonnullByDefault
 public class LastSupperItem extends Item
 {
-    LastSupperItem()
+    public LastSupperItem()
     {
         super(new Properties().maxStackSize(1).group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new Food.Builder().setAlwaysEdible().hunger(0).saturation(0).build()));
     }

@@ -6,12 +6,12 @@
 
 package com.alcatrazescapee.lastsupper;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.Pair;
 import net.minecraftforge.common.ForgeConfigSpec;
+
+import com.alcatrazescapee.lastsupper.util.Helpers;
 
 public final class Config
 {
@@ -53,8 +53,7 @@ public final class Config
 
         private List<? extends String> getDefaultIngredients()
         {
-            return new ArrayList<>(Arrays.asList(
-                    "minecraft:chorus_fruit",
+            return Helpers.listOf("minecraft:chorus_fruit",
                     "minecraft:golden_apple",
                     "minecraft:rabbit_stew",
                     "minecraft:mushroom_stew",
@@ -80,7 +79,7 @@ public final class Config
                     "minecraft:pufferfish",
                     "minecraft:sweet_berries",
                     "minecraft:dried_kelp"
-            ));
+            );
         }
     }
 }

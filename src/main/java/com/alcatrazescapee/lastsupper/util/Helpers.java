@@ -7,6 +7,7 @@
 package com.alcatrazescapee.lastsupper.util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -85,6 +86,14 @@ public final class Helpers
         }
         // Copies the ingredients since they are removed during use
         return new ArrayList<>(ingredients);
+    }
+
+    @SafeVarargs
+    public static <T> List<T> listOf(T... elements)
+    {
+        List<T> list = new ArrayList<>();
+        Collections.addAll(list, elements);
+        return list;
     }
 
     @Nonnull
