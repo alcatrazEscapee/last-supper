@@ -1,7 +1,6 @@
 /*
- * Part of the Last Supper Mod by alcatrazEscapee
- * Work under Copyright. Licensed under the GPL-3.0.
- * See the project LICENSE.md for more information.
+ * Part of the Last Supper Mod by AlcatrazEscapee
+ * Work under Copyright. See the project LICENSE.md for details.
  */
 
 package com.alcatrazescapee.lastsupper.items;
