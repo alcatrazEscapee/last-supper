@@ -1,5 +1,7 @@
 # The Last Supper
 
+![Curseforge Build + Upload](https://github.com/alcatrazEscapee/last-supper/workflows/Curseforge%20Build%20+%20Upload/badge.svg)
+
 This mod adds the last supper you will ever need, albeit until you die.
 
 The Last Supper is a special food item. Once you consume it, you will never need to consume any other food again. You will have eternally full hunger. This buff is lost when you die. Note that it will not give you infinite saturation, so it can be a trade-off.
