@@ -50,5 +50,3 @@ The next step is to chunk all the items on the ground! Make sure all the items a
 Both the ingredients and the catalyst item can be completely customized via config entries.
 
 In addition, the Last Supper item can be set to give the player infinite saturation as well.
-
-
