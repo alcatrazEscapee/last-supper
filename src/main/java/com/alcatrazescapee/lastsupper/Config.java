@@ -15,8 +15,7 @@ import com.alcatrazescapee.lastsupper.util.Helpers;
 public final class Config
 {
     public static final CommonConfig COMMON;
-
-    static final ForgeConfigSpec COMMON_SPEC;
+    public static final ForgeConfigSpec COMMON_SPEC;
 
     static
     {

@@ -51,7 +51,7 @@ public class LastSupper
     }
 
     @SubscribeEvent
-    public void onConfigReload(ModConfig.ConfigReloading event)
+    public void onConfigReload(ModConfig.Reloading event)
     {
         // Reload cached ingredients + catalyst item
         Helpers.reloadConfig();

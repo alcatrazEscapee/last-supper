@@ -33,7 +33,7 @@ public class PlayerData
         @Override
         public INBT writeNBT(Capability<IPlayerData> capability, IPlayerData instance, Direction side)
         {
-            return new ByteNBT((byte) (instance.hasEatenLastSupper() ? 1 : 0));
+            return ByteNBT.valueOf(instance.hasEatenLastSupper());
         }
 
         @Override
