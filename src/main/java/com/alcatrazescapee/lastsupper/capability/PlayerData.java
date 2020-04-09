@@ -72,7 +72,7 @@ public class PlayerData
         @Override
         public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @Nullable Direction side)
         {
-            return capability.cast();
+            return cap == CAPABILITY ? capability.cast() : LazyOptional.empty();
         }
 
         @Override
